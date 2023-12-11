@@ -1,0 +1,227 @@
+@font-face {
+  font-family: futura-book;
+  src: url(fonts/futura_book.woff2) format("woff2"),
+    url(fonts/futura_book.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: futura-medium;
+  src: url(fonts/futura_medium.woff2) format("woff2"),
+    url(fonts/futura_medium.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: futura-bold;
+  src: url(fonts/futura_bold.woff2) format("woff2"),
+    url(fonts/futura_bold.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: futura-heavy;
+  src: url(fonts/futura_heavy.woff2) format("woff2"),
+    url(fonts/futura_heavy.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/roboto_condensed.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url("images/theme-10.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.background-overlay {
+  background-image: url("images/bg-overlay.webp");
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width: 1200px;
+  padding: 163px 15px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+.heading {
+  text-align: center;
+  margin: 0 0 15px;
+  margin-top: 0px;
+  margin-bottom: 31px;
+}
+
+.heading span {
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: roboto condensed, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-size: 100px;
+  box-sizing: border-box;
+  text-shadow: 0 9px 16px rgba(255, 255, 255, 0.4);
+}
+
+.widget {
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+.widget span {
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: center;
+  font-family: futura-medium !important;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #f5ad0d;
+  font-size: 30px;
+  box-sizing: border-box;
+}
+
+.editor {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.editor span {
+  display: block;
+  font-family: futura-book;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  box-sizing: border-box;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s,
+    transform var(--e-transform-transition-duration, 0.4s);
+  margin: 0px 0px 63px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+h6 {
+  text-align: center;
+  clear: both;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+h6 span {
+  text-align: center;
+  line-height: 1.2;
+  font-family: futura-heavy !important;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.42px;
+  box-sizing: border-box;
+}
+
+.cms-countdown {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: roboto condensed, sans-serif;
+  margin: 0 -15px;
+}
+
+.cms-countdown .countdown-amount {
+  color: #fff;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1;
+  position: relative;
+  letter-spacing: 0.05em;
+  padding: 60px 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .cms-countdown .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+.cms-countdown .countdown-period {
+  background-color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 17px 20px;
+  color: #111;
+  font-weight: 700;
+  display: block;
+}
+
+.cms-countdown .countdown-item {
+  padding: 0 15px;
+  margin-bottom: 30px;
+  width: 25%;
+  text-align: center;
+}
+
+.cms-countdown .countdown-item .countdown-item-inner {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (max-width: 767px) {
+  .cms-countdown .countdown-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cms-countdown .countdown-item {
+    width: 100%;
+  }
+}
