@@ -54,18 +54,14 @@ html {
   height: 100%;
 }
 
-body {
+section {
   background-image: url("images/theme-10.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 163px 0;
+  position: relative;
 }
 
 .background-overlay {
@@ -80,10 +76,12 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: auto;
   z-index: 2;
@@ -174,6 +172,24 @@ h6 span {
   box-sizing: border-box;
 }
 
+@media (max-width: 767px) {
+  .heading span {
+    font-size: 60px;
+  }
+
+  .widget span {
+    font-size: 20px;
+  }
+
+  .editor span {
+    font-size: 17px;
+  }
+
+  h6 span {
+    font-size: 18px;
+  }
+}
+
 .cms-countdown {
   display: flex;
   flex-wrap: wrap;
@@ -228,5 +244,31 @@ h6 span {
 @media screen and (max-width: 575px) {
   .cms-countdown .countdown-item {
     width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .elementor-269
+    .elementor-element.elementor-element-401722e
+    > .elementor-widget-container {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-269 .elementor-element.elementor-element-d586345 .custom-heading {
+    font-size: 60px;
+  }
+
+  .elementor-269 .elementor-element.elementor-element-847cd30 .custom-heading {
+    font-size: 20px;
+  }
+
+  .elementor-269 .elementor-element.elementor-element-401722e {
+    font-size: 17px;
+  }
+
+  .elementor-269 .elementor-element.elementor-element-e1efac8 .custom-heading {
+    font-size: 18px;
   }
 }
