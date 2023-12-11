@@ -54,6 +54,11 @@ html {
   height: 100%;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 section {
   background-image: url("images/theme-10.webp");
   background-position: center center;
